@@ -1,6 +1,6 @@
 .footer {
   width: 320px;
-  min-height: 233px;
+  min-height: 120px;
   background-color: @base-white-color;
   outline: 1px solid rgba(255, 99, 78, 0.5);
   outline-offset: -1px;
@@ -8,9 +8,18 @@
 
 .main-footer__social-list,
 .footer-logo-list {
+  width: 155px;
+  display: flex;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0;
 }
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 
 .main-footer__text {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -46,4 +55,34 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @base-black-color;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 768px;
+    height: 120px;
+  }
+
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    height: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 1200px;
+    height: 120px;
+  }
+
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 120px;
+  }
 }
