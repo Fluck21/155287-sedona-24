@@ -29,4 +29,142 @@
   font-size: 18px;
   line-height: 26px;
   color: @base-black-color;
+  width: 230px;
+  height: 58px;
+}
+
+.form-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -1px;
+}
+
+.form__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  min-height: 305px;
+  outline: 1px solid#9966CC;
+  outline-offset: -1px;
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+}
+
+.form__input-surname {
+  width: 192px;
+  height: 58px;
+}
+
+.form__information {
+  width: 280px;
+  min-height: 288px;
+  outline: 1px solid#9966CC;
+  outline-offset: -1px;
+}
+
+.form__impressions {
+  width: 280px;
+  min-height: 288px;
+  outline: 1px solid#9966CC;
+  outline-offset: -1px;
+}
+
+.form__landmark {
+  width: 280px;
+  min-height: 409px;
+  outline: 1px solid#9966CC;
+  outline-offset: -1px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+  }
+
+  .form__caption {
+    order: 2;
+    width: 325px;
+    min-height: 315px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .form__information {
+    order: 3;
+    width: 649px;
+    grid-row: 2 / -2;
+  }
+
+  .form__impressions {
+    order: 1;
+    width: 325px;
+    min-height: 315px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 325px 325px;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .form__landmark {
+    width: 648px;
+  }
+
+  .form__emotions {
+    width: 648px;
+    outline: 1px solid#9966CC;
+    outline-offset: -1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+  }
+
+  .form__caption {
+    width: 480px;
+    min-height: 360px;
+  }
+
+  .form__impressions {
+    width: 480px;
+    min-height: 360px;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .form__information {
+    width: 960px;
+  }
+
+  .form__landmark {
+    width: 960px;
+  }
+
+  .form__emotions {
+    width: 960px;
+  }
 }

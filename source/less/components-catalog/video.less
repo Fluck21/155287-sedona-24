@@ -22,3 +22,28 @@
   color: @base-black-color;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .video {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    min-height: 685px;
+  }
+
+  .video__wrapper {
+    width: 648px;
+    min-height: 685px;
+  }
+
+  .video__block {
+    width: 445px;
+    min-height: 117px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 1200px;
+  }
+}
